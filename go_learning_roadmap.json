@@ -1,0 +1,367 @@
+{
+  "title": "Go Learning Roadmap",
+  "source": {
+    "file": "golang.pdf",
+    "page": 1,
+    "website": "roadmap.sh",
+    "description": "Go roadmap with related backend, DevOps, Docker, Kubernetes, system design, software design and architecture paths."
+  },
+  "roadmap": [
+    {
+      "section": "Introduction to Go",
+      "topics": [
+        "Why use Go",
+        "History of Go",
+        "Setting up the Environment",
+        "Hello World in Go",
+        "`go` command"
+      ]
+    },
+    {
+      "section": "Related Roadmaps",
+      "topics": [
+        "Backend Roadmap",
+        "DevOps Roadmap",
+        "Docker Roadmap",
+        "Kubernetes Roadmap",
+        "System Design",
+        "Software Design & Architecture"
+      ]
+    },
+    {
+      "section": "Language Basics",
+      "topics": [
+        {
+          "name": "Variables & Constants",
+          "subtopics": [
+            "var vs :=",
+            "Zero Values",
+            "const and iota",
+            "Scope and Shadowing"
+          ]
+        },
+        {
+          "name": "Data Types",
+          "subtopics": [
+            "Boolean",
+            "Numeric Types",
+            "Integers (Signed, Unsigned)",
+            "Floating Points",
+            "Complex Numbers",
+            "Runes",
+            "Strings",
+            "Raw String Literals",
+            "Interpreted String Literals",
+            "Type Conversion"
+          ]
+        },
+        {
+          "name": "Composite Types",
+          "subtopics": [
+            "Arrays",
+            "Slices",
+            "Capacity and Growth",
+            "make()",
+            "Slice to Array Conversion",
+            "Array to Slice Conversion",
+            "Strings",
+            "Maps",
+            "Comma-Ok Idiom",
+            "Structs",
+            "Struct Tags & JSON",
+            "Embedding Structs"
+          ]
+        },
+        {
+          "name": "Conditionals",
+          "subtopics": [
+            "if",
+            "if-else",
+            "switch"
+          ]
+        },
+        {
+          "name": "Loops",
+          "subtopics": [
+            "for loop",
+            "for range",
+            "Iterating Maps",
+            "Iterating Strings",
+            "break",
+            "continue",
+            "goto (discouraged)"
+          ]
+        },
+        {
+          "name": "Functions",
+          "subtopics": [
+            "Function Basics",
+            "Variadic Functions",
+            "Multiple Return Values",
+            "Anonymous Functions",
+            "Closures",
+            "Named Return Values",
+            "Call by Value"
+          ]
+        },
+        {
+          "name": "Pointers",
+          "subtopics": [
+            "Pointer Basics",
+            "Pointers with Structs",
+            "With Maps & Slices",
+            "Memory Management",
+            "Garbage Collection"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Methods and Interfaces",
+      "topics": [
+        {
+          "name": "Methods",
+          "subtopics": [
+            "Methods vs Functions",
+            "Pointer Receivers",
+            "Value Receivers"
+          ]
+        },
+        {
+          "name": "Interfaces",
+          "subtopics": [
+            "Interfaces Basics",
+            "Empty Interfaces",
+            "Embedding Interfaces",
+            "Type Assertions",
+            "Type Switch"
+          ]
+        },
+        {
+          "name": "Generics",
+          "subtopics": [
+            "Why Generics?",
+            "Generic Functions",
+            "Generic Types / Interfaces",
+            "Type Constraints",
+            "Type Inference"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Error Handling",
+      "topics": [
+        "Error Handling Basics",
+        "`error` interface",
+        "errors.New",
+        "fmt.Errorf",
+        "Wrapping/Unwrapping Errors",
+        "Sentinel Errors",
+        "`panic` and `recover`",
+        "Stack Traces & Debugging"
+      ]
+    },
+    {
+      "section": "Code Organization",
+      "topics": [
+        {
+          "name": "Modules & Dependencies",
+          "subtopics": [
+            "go mod init",
+            "go mod tidy",
+            "go mod vendor"
+          ]
+        },
+        {
+          "name": "Packages",
+          "subtopics": [
+            "Package Import Rules",
+            "Using 3rd Party Packages",
+            "Publishing Modules"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Concurrency",
+      "topics": [
+        "Goroutines",
+        "Channels",
+        "Buffered vs Unbuffered",
+        "Select Statement",
+        "Worker Pools",
+        "`sync` Package",
+        "Mutexes",
+        "WaitGroups",
+        "`context` Package",
+        "Deadlines & Cancellations",
+        "Common Usecases",
+        "Concurrency Patterns",
+        "fan-in",
+        "fan-out",
+        "pipeline",
+        "Race Detection"
+      ]
+    },
+    {
+      "section": "Standard Library",
+      "topics": [
+        "I/O & File Handling",
+        "flag",
+        "time",
+        "encoding/json",
+        "os",
+        "bufio",
+        "slog",
+        "regexp",
+        "go:embed for embedding"
+      ]
+    },
+    {
+      "section": "Testing & Benchmarking",
+      "topics": [
+        "`testing` package basics",
+        "Table-driven Tests",
+        "Mocks and Stubs",
+        "`httptest` for HTTP Tests",
+        "Benchmarks",
+        "Coverage"
+      ]
+    },
+    {
+      "section": "Ecosystem & Popular Libraries",
+      "topics": [
+        {
+          "name": "Building CLIs",
+          "subtopics": [
+            "Cobra",
+            "urfave/cli",
+            "bubbletea"
+          ]
+        },
+        {
+          "name": "Web Development",
+          "subtopics": [
+            "net/http (standard)",
+            "Frameworks (Optional)",
+            "gin",
+            "echo",
+            "fiber",
+            "beego"
+          ]
+        },
+        {
+          "name": "gRPC & Protocol Buffers",
+          "subtopics": [
+            "gRPC",
+            "Protocol Buffers"
+          ]
+        },
+        {
+          "name": "ORMs & DB Access",
+          "subtopics": [
+            "pgx",
+            "GORM"
+          ]
+        },
+        {
+          "name": "Logging",
+          "subtopics": [
+            "Zerolog",
+            "Zap"
+          ]
+        },
+        {
+          "name": "Realtime Communication",
+          "subtopics": [
+            "Melody",
+            "Centrifugo"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Go Toolchain and Tools",
+      "topics": [
+        {
+          "name": "Core Go Commands",
+          "subtopics": [
+            "go run",
+            "go build",
+            "go install",
+            "go fmt",
+            "go mod",
+            "go test",
+            "go clean",
+            "go doc",
+            "go version"
+          ]
+        },
+        {
+          "name": "Code Generation / Build Tags",
+          "subtopics": [
+            "go generate",
+            "Build Tags"
+          ]
+        },
+        {
+          "name": "Code Quality and Analysis",
+          "subtopics": [
+            "go vet",
+            "goimports",
+            "Linters",
+            "revive",
+            "staticcheck",
+            "golangci-lint"
+          ]
+        },
+        {
+          "name": "Security",
+          "subtopics": [
+            "govulncheck"
+          ]
+        },
+        {
+          "name": "Performance and Debugging",
+          "subtopics": [
+            "pprof",
+            "trace",
+            "Race Detector"
+          ]
+        },
+        {
+          "name": "Deployment & Tooling",
+          "subtopics": [
+            "Cross-compilation",
+            "Docker",
+            "Kubernetes"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Advanced Topics",
+      "topics": [
+        "Building Executables",
+        "Memory Management in Depth",
+        "Escape Analysis",
+        "Reflection",
+        "Unsafe Package",
+        "Build Constraints & Tags",
+        "CGO Basics",
+        "Compiler & Linker Flags",
+        "Plugins & Dynamic Loading"
+      ]
+    },
+    {
+      "section": "Next Roadmaps",
+      "topics": [
+        "Backend",
+        "DevOps",
+        "Docker",
+        "Kubernetes"
+      ]
+    }
+  ]
+}
