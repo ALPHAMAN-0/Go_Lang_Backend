@@ -5,12 +5,15 @@ A practical, trackable 12-week plan to learn Go (Golang) with hands-on projects 
 ## Architecture / How it Works
 
 ```mermaid
-flowchart LR
-    A[User] --> B[Go Lang Backend]
-    B --> C{Logic}
-    C --> D[(Data)]
-    C --> E[Output]
-    D --> C
+flowchart TD
+    subgraph B["2) Backend"]
+        A1["Database Connection D&P"]
+        A2["Generate CRUD Golang Code From SQL"]
+        A3["Go_Transaction"]
+        A4["Redis"]
+        A5["Unit Testing random data"]
+        A6["Write & Run Database Migration"]
+    end
 ```
 
 
