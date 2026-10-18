@@ -2,6 +2,18 @@
 
 A practical, trackable 12-week plan to learn Go (Golang) with hands-on projects and resources.
 
+## Architecture / How it Works
+
+```mermaid
+flowchart LR
+    A[User] --> B[Go Lang Backend]
+    B --> C{Logic}
+    C --> D[(Data)]
+    C --> E[Output]
+    D --> C
+```
+
+
 ## How to use this file
 - Use the task lists below to mark your progress. On GitHub you can check boxes directly; locally edit this file and change `- [ ]` to `- [x]` and commit.
 - For local commits, run:
